@@ -73,6 +73,7 @@ Primary the main code sits inside __init__.py in your Function(Name) Folder and 
 + The Code is based on series of functions working together, The __main__ function is the default function of Azure thus we can't change it's name as it's the initial point of start.
 + We use News API from Newsapi.org which returns data with more information then we needed in Json parsing, So as far as you feed below keys to Json Parsing Function it works flawlessly else it throws an KeyError exception.
 + The API Structure to provide data to HTML Templating(html_templating function) is as per below table and defined in Json_Parsing Fucntion.
+
 | Key | Value     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `title`      | `string` | **Required** String of title of news |
