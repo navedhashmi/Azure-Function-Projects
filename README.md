@@ -78,6 +78,27 @@ Primary the main code sits inside __init__.py in your Function(Name) Folder and 
 | `url`      | `string/url` | **Required**. String of url to the titled news |
 | `urltoimage`      | `string/url/image` | **Required**. Image url of the news |
 
+## Exceptions & Error Handling
++ We use 3 Types of Error Handling in the above Function.
+   + Requests Error Handling
+   + Json KeyError Handling
+   + Wrong Email Input Error
+### >>>> Requests Error Handling <<<<
+This is to tackle with various exceptions related to __Third Party API__ that might range from Connection loss, Wrong String input, API key errors etc.
+
+`requests.exceptions.RequestException`
+
+### >>>> Json KeyError Handling <<<<
+This is to tackle with any sort of __"Key"__ : __"Value"__ Pair change in data recieved from API.
+
+`KeyError`
+
+### >>>> Wrong Email Input Error <<<<
+This is to tackle with any sort of wrong __reciever_email__ (Just check the email based on Email Validator module)
+
+`EmailNotValidError`
+
+
 # Note
 
 If you have any sort of issue in using above code then kindly ping me here or on my social media Links on my [Website](https://www.navedhashmi.com/)
