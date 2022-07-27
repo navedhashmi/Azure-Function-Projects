@@ -33,7 +33,7 @@ The Project aim is to develop a Time Triggered Azure Function to deliver you the
   + You need to get an API_KEY from [News API](https://newsapi.org/) and put it in your Environment Variables
   
   
-![](https://i.ibb.co/GQMN9qq/newtime.png)
+![](https://i.ibb.co/tp2Fz99/newtime.png)
 
 
 ## Other - How to use Gmail to send emails
@@ -41,7 +41,7 @@ The Project aim is to develop a Time Triggered Azure Function to deliver you the
 + After setting up you 2-Factor, you need to setup an App Password which we use in .env as password(This password is different from the password that is use to access your gmail from browser)
 + To Setup an app password login to your said gmail and [Click Here](https://accounts.google.com/signin/v2/challenge/pwd?continue=https%3A%2F%2Fmyaccount.google.com%2Fapppasswords&service=accountsettings&osid=1&rart=ANgoxcezR1wWrDv3AGhL48fjKDEAX5mT6MhnFNl_kMJdePMJOEaIpe_ypscfaec4X1YJ7whF7CdyHkj55AxZefhg1mVU6UY0Iw&TL=AKqFyY-ngadFWMJNXLxcLpJcpdoVhj1ibecLasJD94haBGs61nn8qRVU8Inlj7fi&flowName=GlifWebSignIn&cid=1&flowEntry=ServiceLogin)
 + Make sure you have these settings before generation of App passsword.
-![](https://i.ibb.co/Gpd2jJp/apppassword.png)
+![](https://i.ibb.co/1Q0qxnQ/apppassword.png)
 + Lastly put your Email and This above App Password in .env
 
 ## Command to start Azure-Function
@@ -49,17 +49,17 @@ The Project aim is to develop a Time Triggered Azure Function to deliver you the
   + We are Using VS Code Debugger to check, If program is working or not.
   + Get Reference from below Picture to Run the Function in Debugger.
 
-![](https://i.ibb.co/801Ld6y/howtostart.png)
+![](https://i.ibb.co/s28d6yT/howtostart.png)
   
 
 ## Time-Trigger > CRON Expression
 If we move towards the basics then Azure Time Trigger Function is basically a function which takes a specific CRON Expression to run at a particular time with frequent re-runs, It could be of days, hours , minutes to weeks.
 
 + ### CRON Expression:
-    ![](https://i.ibb.co/5TFLQfn/1-Ssp-OSw-P0-HKa-QCnh-O1oe-rg.png)
+    ![](https://i.ibb.co/cJLQW7C/1-Ssp-OSw-P0-HKa-QCnh-O1oe-rg.png)
 + ### CRON Expression in Azure Function:
    + As you could see in below picture, The Cron Expression is in function.json in NewsTime Directory as __"Schedule"__.
-    ![](https://i.ibb.co/MDrrSS7/croninazure.png)
+    ![](https://i.ibb.co/jvmmffD/croninazure.png)
   
 ## Code Structure 
 
